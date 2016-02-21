@@ -1,0 +1,9 @@
+
+.footer {
+  composes: brand1 from "../../styles/shared/colors.scss";
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

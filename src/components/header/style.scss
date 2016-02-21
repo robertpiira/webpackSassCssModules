@@ -1,0 +1,15 @@
+
+
+.awesome-border {
+  border-bottom: 3px solid red;
+}
+
+.header {
+  composes: awesome-border;
+  composes: brand1 from "../../styles/shared/colors.scss";
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
