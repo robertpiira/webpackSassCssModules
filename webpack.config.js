@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
 
-	entry: './src/index.jsx',
+	entry: './src/index.js',
 
 	output: {
 		path: './build',
@@ -36,15 +36,6 @@ module.exports = {
 				test: /\.(scss|css)$/,
 				loader: ExtractTextPlugin.extract("style?sourceMap", "css?modules&importLoaders=1&localIdentName=[local]_[hash:base64:5]!autoprefixer?browsers=last 2 version!sass-loader")
 			}
-			// {
-	    //   test: /\.(less|css)$/,
-	    //   loader: [
-	    //     'style',
-			// 		'css-loader!less-loader?modules&importLoaders=1&localIdentName=[local]_[hash:base64:5]',
-			// 		'autoprefixer?browsers=last 2 version',
-			// 		'less'
-	    //   ].join('!')
-	    // }
 		]
 	},
 

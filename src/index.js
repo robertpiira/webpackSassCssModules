@@ -1,9 +1,8 @@
 
 import React from 'react';
-import Header from './components/header/index.jsx';
+import Header from './components/header/index.js';
 import Footer from './components/footer/index.js';
 import style from './styles/style.scss';
-
 
 
 class App extends React.Component {

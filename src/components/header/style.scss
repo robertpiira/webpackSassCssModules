@@ -1,4 +1,5 @@
 
+@import "../../styles/shared/effects.scss";
 
 .awesome-border {
   border-bottom: 3px solid red;
@@ -7,6 +8,7 @@
 .header {
   composes: awesome-border;
   composes: brand1 from "../../styles/shared/colors.scss";
+  @include very-subtle-shadow(20px);
   color: #fff;
   position: fixed;
   top: 0;
